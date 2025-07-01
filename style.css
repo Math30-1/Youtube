@@ -1,0 +1,327 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+
+header {
+  
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+header h1 {
+  font-size: 24px;
+}
+
+header input {
+  padding: 8px 12px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+}
+
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+
+.video-principal {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.video-principal iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+.video-principal h2 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+.video-principal p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+.videos-recomendados {
+  flex: 1;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.videos-recomendados h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.videos-recomendados ul {
+  list-style: none;
+}
+
+.videos-recomendados li {
+  margin-bottom: 10px;
+}
+
+.videos-recomendados a {
+  text-decoration: none;
+  color: #1a0dab;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.videos-recomendados a:hover {
+  color: #c00;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  header input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .video-principal {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+.icon {
+  height: 60px;  
+}
+
+}
+
+.youtube-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.youtube-header .esquerda,
+.youtube-header .direita {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.youtube-header .menu {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.youtube-header .logo {
+  height: 24px;
+}
+
+.youtube-header .pesquisa {
+  flex: 1;
+  display: flex;
+  max-width: 600px;
+  margin: 0 1rem;
+}
+
+.youtube-header input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #555;
+  background-color: #121212;
+  color: white;
+}
+
+.youtube-header .btn-busca,
+.youtube-header .btn-voz {
+  background-color: #222;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  margin-left: 0.2rem;
+}
+
+.youtube-header .criar {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.youtube-header .notificacoes {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.youtube-header .badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  padding: 2px 5px;
+}
+
+.youtube-header .perfil {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.curtir {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.curtir:hover {
+  background-color: #ddd;
+}
+
+.comentario {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comentario:hover {
+  background-color: #ddd;
+}
+
+.deslike {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deslike:hover {
+  background-color: #ddd;
+}
+
+.conteudo {
+  padding: 20px;
+}
+
+.player-area {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.video-principal {
+  flex: 3;
+}
+
+.video-principal iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+.lista-videos {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.video-item {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.video-item img {
+  width: 168px;
+  height: 94px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+.canal, .detalhes {
+  font-size: 12px;
+  color: #555;
+}
+
+.botoes-acao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
