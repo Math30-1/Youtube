@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini YouTube</title>
+  
+  
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css?_cacheOverride=1751327611963"><link rel="stylesheet" href="http://127.0.0.1:5500/style.css?_cacheOverride=1751327611969"><link rel="icon" type="image/x-icon" href="youtubeicone.png"></head>
+<body style="background-color: azure;">
+  <header>
+    <img src="logoyoutube.png" alt="logo YouTube" class="logo" style="height: 40px;">
+    <div class="pesquisa">
+      <input type="text" placeholder="Pesquisar">
+      <button class="btn-busca">🔍</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="player-area">
+     
+      <section class="video-principal">
+        <iframe id="videoFrame" width="560" height="315" src="video/Ira..mp4" title="YouTube video" frameborder="0" allowfullscreen=""></iframe>
+        <h2 id="videoTitle">Título do Vídeo</h2>
+        <p id="videoDesc">Descrição curta do vídeo aqui.</p>
+        <section class="descricao-video">
+      <p class="visualizacoes">1.234.567 visualizações • 30 de junho de 2025</p>
+      <p class="descricao">
+        Conecte-se com Edson Gomes:<br>
+        ▶ Instagram: @edsongomesreal<br>
+
+        #EdsonGomes #Reggae<br><br>
+        <div class="botoes-acao">
+  <button class="curtir"><i class="fa-solid fa-thumbs-up"></i></button>
+  <button class="deslike"><i class="fa-solid fa-thumbs-down"></i></button>
+  <button class="inscrever"><i class="fa-solid fa-play"></i> Inscreva-se</button>
+  <button class="comentario"><i class="fa-solid fa-comment"></i> Comentários</button>
+  <button class="notificar"><i class="fa-solid fa-bell"></i></button>
+</div>
+
+        
+        
+      </p>
+      
+    </section>
+
+      </section>
+      <style>
+    body {
+      background-color: #181818;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .lista-videos {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin-left:300px;
+      
+    }
+
+    .video-item {
+      display: flex;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .video-item img {
+      width: 168px;
+      height: 94px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .info-video {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .titulo {
+      font-size: 15px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .canal {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .detalhes {
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    .novo {
+      background-color: #aaa;
+      color: #000;
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+  </style>
+
+
+     
+      <div class="lista-videos">
+        <div class="video-item">
+          <img src="thumb1video1.jpg" alt="Thumb 1">
+          <div class="info-video">
+            <div class="titulo">Pedro Qualy &amp; WIU - Papel de Parede</div>
+            <div class="canal">HAIKAISS OFICIAL <i class="fa-solid fa-circle-check"></i></div>
+            <div class="detalhes">724 mil visualizações • há 3 dias</div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <img src="thumb2video2.jpg" alt="Thumb 2">
+          <div class="info-video">
+            <div class="titulo">VEIGH - EU VENCI O MUNDO</div>
+            <div class="canal">FALATUZETRÊ <i class="fa-solid fa-circle-check"></i></div>
+            <div class="detalhes">55 mil visualizações • há 3 dias</div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <img src="thumb3video3.jpg" alt="Thumb 3">
+          <div class="info-video">
+            <div class="titulo">Love Doctor</div>
+            <div class="canal">Romain Virgo     <i  class="fa-solid fa-circle-check"></i></div>
+            <div class="detalhes">639 mil vizualizações • há 9 anos</div>
+        
+        </div>
+      </div>
+    </div>
+
+   
+    
+  </main>
+
+  <script src="script.js"></script>
+
+<script>
